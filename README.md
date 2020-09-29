@@ -3,7 +3,7 @@ REST API for unit conversion<br>
 
 Usage: 
 ***https://unitconversionapi.herokuapp.com/{measure}/{unit}/{number}***
-'without the curly brackets'
+'without the curly brackets'<br>
 Example: https://unitconversionapi.herokuapp.com/distance/m/2
 
 For formatting the output result, use ***toStingLocale('en-IN')*** or ***toFixed(23)*** function.
