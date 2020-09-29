@@ -1,0 +1,51 @@
+{
+  "error": {
+    "message": "URI not found. Please read the documentation carefully.",
+    "documentation-url": "url"
+  },
+  "bad_request": {
+    "message": "Entered paramater was not a number. Please read the documentation carefully.",
+    "documentation-url": "url"
+  },
+  "distance_json": {
+    "message": "URI not found. Please read the documentation carefully.",
+    "documentation-url": "url",
+    "available_uri": {
+      "GET": {
+        "microns": "https://localhost:5000/distance/mic/number_value",
+        "millimeter": "https://localhost:5000/distance/mm/number_value",
+        "centimeter": "https://localhost:5000/distance/cm/number_value",
+        "meters": "https://localhost:5000/distance/m/number_value",
+        "kilometers": "https://localhost:5000/distance/km/number_value",
+        "mils": "https://localhost:5000/distance/mil/number_value",
+        "inches": "https://localhost:5000/distance/in/number_value",
+        "feet": "https://localhost:5000/distance/ft/number_value",
+        "yards": "https://localhost:5000/distance/yd/number_value",
+        "miles": "https://localhost:5000/distance/mi/number_value",
+        "nautical_miles": "https://localhost:5000/distance/nm/number_value",
+        "fathoms": "https://localhost:5000/distance/fm/number_value",
+        "chains": "https://localhost:5000/distance/ch/number_value",
+        "furlongs": "https://localhost:5000/distance/fur/number_value",
+        "light_years": "https://localhost:5000/distance/ly/number_value"
+      }
+    }
+  },
+  "area_json": {
+    "message": "URI not found. Please read the documentation carefully.",
+    "documentation-url": "url",
+    "available_uri": {
+      "GET": {
+        "square_millimeters": "https://localhost:5000/area/sqmm/number_value",
+        "square_centimeters": "https://localhost:5000/area/sqcm/number_value",
+        "square_meters": "https://localhost:5000/area/sqm/number_value",
+        "hectares": "https://localhost:5000/area/ha/number_value",
+        "square_kilometers": "https://localhost:5000/area/sqkm/number_value",
+        "square_inches": "https://localhost:5000/area/sqin/number_value",
+        "square_feet": "https://localhost:5000/area/sqft/number_value",
+        "square_yard": "https://localhost:5000/area/sqyd/number_value",
+        "acres": "https://localhost:5000/area/ac/number_value",
+        "square_miles": "https://localhost:5000/area/sqmi/number_value"
+      }
+    }
+  }
+}
