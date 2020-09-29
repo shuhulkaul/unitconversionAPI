@@ -219,10 +219,10 @@ var formula = function (value, selectedUnit) {
   response.result['ch'] = temp / 20116798.12;
 
   //Furlongs
-  response.value['fur'] = temp / 201168385.98;
+  response.result['fur'] = temp / 201168385.98;
 
   //Light Years
-  response.value['ly'] = temp * 0.0000000000000000000001057;
+  response.result['ly'] = temp * 0.0000000000000000000001057;
 
   return response;
 };

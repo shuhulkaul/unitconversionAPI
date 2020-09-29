@@ -22,7 +22,7 @@ router.get('/cum/:number', async (req, res) => {
   }
   res.status(200).send(formula(req.params.number, 2));
 });
-router.get('/cui/:number', async (req, res) => {
+router.get('/cuin/:number', async (req, res) => {
   if (isNaN(req.params.number)) {
     res.status(400).json(bad_req_error);
   }
@@ -155,7 +155,7 @@ var formula = function (value, selectedUnit) {
   response.result['cum'] = temp / 1000000;
 
   //cu. in
-  response.result['cui'] = temp / 16.387064;
+  response.result['cuin'] = temp / 16.387064;
 
   //cu ft.
   response.result['cuft'] = temp / 28316.84659;
