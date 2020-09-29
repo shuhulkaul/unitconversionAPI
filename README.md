@@ -2,12 +2,18 @@
 REST API for unit conversion<br>
 Measurement Unit Converter<br>
 
-Available Units<br>
+Usage: 
+https://unitconversionapi.herokuapp.com/{measure}/{unit}/{number}
+'without the curly brackets'
+Example: https://unitconversionapi.herokuapp.com/distance/m/2
+
+Available Units<br> 
 <br>
-1. Distance<br>
-----> Micron<br>
-----> Millimeter<br>
-----> Centimeter<br>
+***Without the curly brackets***
+1. Distance ***distance*** <br>
+***mic***----> Micron<br>
+***mm***----> Millimeter<br>
+***cm***----> Centimeter<br>
 ----> Meter<br>
 ----> Kilometer<br>
 ----> Mils/Thou<br>
