@@ -4,7 +4,7 @@
     "documentation-url": "https://github.com/shuhulkaul/unitconversionAPI/blob/master/README.md"
   },
   "bad_request": {
-    "message": "Entered paramater was not a number. Please read the documentation carefully.",
+    "message": "The entered parameter was not a number. Please read the documentation carefully.",
     "documentation-url": "https://github.com/shuhulkaul/unitconversionAPI/blob/master/README.md"
   },
   "distance_json": {
