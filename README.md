@@ -1,141 +1,142 @@
 # unitconversionAPI
 REST API for unit conversion<br>
-Measurement Unit Converter<br>
 
 Usage: 
-https://unitconversionapi.herokuapp.com/{measure}/{unit}/{number}
+***https://unitconversionapi.herokuapp.com/{measure}/{unit}/{number}***
 'without the curly brackets'
 Example: https://unitconversionapi.herokuapp.com/distance/m/2
+
+For formatting the output result, use ***toStingLocale('en-IN')*** or ***toFixed(23)*** function.
 
 Available Units<br> 
 <br>
 ***Without the curly brackets***
-1. Distance ***distance*** <br>
-***mic***----> Micron<br>
-***mm***----> Millimeter<br>
-***cm***----> Centimeter<br>
-----> Meter<br>
-----> Kilometer<br>
-----> Mils/Thou<br>
-----> Inches<br>
-----> Feet<br>
-----> Yards<br>
-----> Miles<br>
-----> Nautical Miles<br>
-----> Fathoms<br>
-----> Chains<br>
-----> Furlongs<br>
-----> Light Years<br>
+1. ***distance*** Distance <br>
+***mic*** ----> Micron<br>
+***mm*** ----> Millimeter<br>
+***cm*** ----> Centimeter<br>
+***m*** ----> Meter<br>
+***km*** ----> Kilometer<br>
+***mil*** ----> Mils/Thou<br>
+***in*** ----> Inches<br>
+***ft*** ----> Feet<br>
+***yd*** ----> Yards<br>
+***mi*** ----> Miles<br>
+***nm*** ----> Nautical Miles<br>
+***fm*** ----> Fathoms<br>
+***ch*** ----> Chains<br>
+***fur*** ----> Furlongs<br>
+***ly*** ----> Light Years<br>
 <br>
-2. Area<br>
-----> Sq. Millimeter<br>
-----> Sq. Centimeter<br>
-----> Sq. Meter<br>
-----> Hectares<br>
-----> Sq. Kilometer<br>
-----> Sq. Inches<br>
-----> Sq. Yards<br>
-----> Acres<br>
-----> Sq. Miles<br>
+2. ***area*** Area<br>
+***sqmm*** ----> Sq. Millimeter<br>
+***sqcm*** ----> Sq. Centimeter<br>
+***sqm*** ----> Sq. Meter<br>
+***ha*** ----> Hectares<br>
+***sqkm*** ----> Sq. Kilometer<br>
+***sqin*** ----> Sq. Inches<br>
+***sqyd*** ----> Sq. Yards<br>
+***ac*** ----> Acres<br>
+***sqmi*** ----> Sq. Miles<br>
 <br>
-3. Volume<br>
-----> Milliliters (cc)<br>
-----> Liters<br>
-----> Cu. Meter<br>
-----> Cu. Inch<br>
-----> Cu. Feet<br>
-----> Cu. Yard<br>
-----> Fluid Ounce (IMPERIAL)<br>
-----> Pint (IMPERIAL)<br>
-----> Gallon (IMPERIAL)<br>
-----> Fluid Ounce (US)<br>
-----> Pint (US)<br>
-----> Gallon (US)<br>
+3. ***volume*** Volume<br>
+***ml*** ----> Milliliters (cc)<br>
+***l*** ----> Liters<br>
+***cum*** ----> Cu. Meter<br>
+***cuin*** ----> Cu. Inch<br>
+***cuft*** ----> Cu. Feet<br>
+***cuyd*** ----> Cu. Yard<br>
+***ozimp*** ----> Fluid Ounce (IMPERIAL)<br>
+***ptimp*** ----> Pint (IMPERIAL)<br>
+***galimp*** ----> Gallon (IMPERIAL)<br>
+***ozus*** ----> Fluid Ounce (US)<br>
+***ptus*** ----> Pint (US)<br>
+***galus*** ----> Gallon (US)<br>
 <br>
-4. Mass<br>
-----> Micrograms<br>
-----> Milligrams<br>
-----> Grams<br>
-----> KG<br>
-----> Ton<br>
-----> Ounce<br>
-----> Pound<br>
-----> Stone<br>
-----> Hundredweight (US)<br>
-----> Hundredweight (UK)<br>
-----> Short Tons (US)<br>
-----> Long Tons (UK)<br>
+4. ***mass*** Mass<br>
+***micg*** ----> Micrograms<br>
+***mg*** ----> Milligrams<br>
+***g*** ----> Grams<br>
+***kg*** ----> KG<br>
+***t*** ----> Ton<br>
+***oz*** ----> Ounce<br>
+***lb*** ----> Pound<br>
+***st*** ----> Stone<br>
+***cwtus*** ----> Hundredweight (US)<br>
+***cwtuk*** ----> Hundredweight (UK)<br>
+***stus*** ----> Short Tons (US)<br>
+***stuk*** ----> Long Tons (UK)<br>
 <br>
-5. Speed<br>
-----> Meter per sec<br>
-----> KMPH<br>
-----> Feet per second<br>
-----> MPH<br>
-----> Knots<br>
+5. ***speed*** Speed<br>
+***mps*** ----> Meter per sec<br>
+***kmph*** ----> KMPH<br>
+***ftps*** ----> Feet per second<br>
+***mph*** ----> MPH<br>
+***kt*** ----> Knots<br>
 <br>
-6. Time<br>
-----> Nanoseconds<br>
-----> Microseconds<br>
-----> Milliseconds<br>
-----> Seconds<br>
-----> Minutes<br>
-----> Hours<br>
-----> Days<br>
-----> Weeks<br>
-----> Years (Gregorian)<br>
-----> Years (Julian)<br>
+6. ***time*** Time<br>
+***ns*** ----> Nanoseconds<br>
+***mics*** ----> Microseconds<br>
+***ms*** ----> Milliseconds<br>
+***s*** ----> Seconds<br>
+***min*** ----> Minutes<br>
+***hr*** ----> Hours<br>
+***d*** ----> Days<br>
+***wk*** ----> Weeks<br>
+***yrg*** ----> Years (Gregorian)<br>
+***yrj*** ----> Years (Julian)<br>
 <br>
-7. Force<br>
-----> Micro-newtons<br>
-----> Millinewtons<br>
-----> Newtons<br>
-----> Kilonewtons<br>
-----> Kilogram-Force<br>
-----> Pound Force<br>
+7. ***force*** Force<br>
+***micn*** ----> Micro-newtons<br>
+***mn*** ----> Millinewtons<br>
+***n*** ----> Newtons<br>
+***kn*** ----> Kilonewtons<br>
+***kgf*** ----> Kilogram-Force<br>
+***lbf*** ----> Pound Force<br>
 <br>
-8. Pressure<br>
-----> Pascal<br>
-----> Hectopascal<br>
-----> Kilopascal<br>
-----> Megapascal<br>
-----> Millibar<br>
-----> Bar<br>
-----> atm<br>
-----> Kilogram per sq. cm<br>
-----> psi<br>
-----> Inches of Mercury<br>
-----> Torr<br>
+8. ***pressure*** Pressure<br>
+***pa*** ----> Pascal<br>
+***hpa*** ----> Hectopascal<br>
+***kpa*** ----> Kilopascal<br>
+***mpa*** ----> Megapascal<br>
+***mbar*** ----> Millibar<br>
+***bar*** ----> Bar<br>
+***atm*** ----> atm<br>
+***kgpsqcm*** ----> Kilogram per sq. cm<br>
+***psi*** ----> psi<br>
+***hg*** ----> Inches of Mercury<br>
+***torr*** ----> Torr<br>
 <br>
-9. Energy<br>
-----> Joules<br>
-----> Kilojoules<br>
-----> Megajoules<br>
-----> kWh<br>
-----> Calories<br>
-----> Kilocalories<br>
-----> BTU<br>
+9. ***energy*** Energy<br>
+***j*** ----> Joules<br>
+***kj*** ----> Kilojoules<br>
+***mj*** ----> Megajoules<br>
+***kwh*** ----> kWh<br>
+***cal*** ----> Calories<br>
+***kcal*** ----> Kilocalories<br>
+***btu*** ----> BTU<br>
 <br>
-10. Power<br>
-----> Watts<br>
-----> Kilowatts<br>
-----> Megawatts<br>
-----> Calories per sec<br>
-----> BTU/h<br>
-----> Horsepower (mech)<br>
-----> Horsepower (metric)<br>
+10. ***power*** Power<br>
+***w*** ----> Watts<br>
+***kw*** ----> Kilowatts<br>
+***mw*** ----> Megawatts<br>
+***calps*** ----> Calories per sec<br>
+***btuph*** ----> BTU/h<br>
+***hpi*** ----> Horsepower (mech)<br>
+***hpm*** ----> Horsepower (metric)<br>
 <br>
-11. Temperature<br>
-----> Celsius<br>
-----> Fahrenheit<br>
-----> Kelvin<br>
+11.***temp*** Temperature<br>
+***c*** ----> Celsius<br>
+***f*** ----> Fahrenheit<br>
+***k*** ----> Kelvin<br>
 <br>
-12. Data Size<br>
-----> B<br>
-----> KiB<br>
-----> MiB<br>
-----> GiB<br>
-----> TiB<br>
-----> kB<br>
-----> MB<br>
-----> GB<br>
-----> TB<br><br>
+12. ***data*** Data Size<br>
+***b*** ----> B<br>
+***kib*** ----> KiB<br>
+***mib*** ----> MiB<br>
+***gib*** ----> GiB<br>
+***tib*** ----> TiB<br>
+***kb*** ----> kB<br>
+***mb*** ----> MB<br>
+***gb*** ----> GB<br>
+***tb*** ----> TB<br><br>
