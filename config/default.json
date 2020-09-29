@@ -5,11 +5,11 @@
   },
   "bad_request": {
     "message": "Entered paramater was not a number. Please read the documentation carefully.",
-    "documentation-url": "url"
+    "documentation-url": "https://github.com/shuhulkaul/unitconversionAPI/blob/master/README.md"
   },
   "distance_json": {
     "message": "URI not found. Please read the documentation carefully.",
-    "documentation-url": "url",
+    "documentation-url": "https://github.com/shuhulkaul/unitconversionAPI/blob/master/README.md",
     "available_uri": {
       "GET": {
         "microns": "https://localhost:5000/distance/mic/number_value",
@@ -32,7 +32,7 @@
   },
   "area_json": {
     "message": "URI not found. Please read the documentation carefully.",
-    "documentation-url": "url",
+    "documentation-url": "https://github.com/shuhulkaul/unitconversionAPI/blob/master/README.md",
     "available_uri": {
       "GET": {
         "square_millimeters": "https://localhost:5000/area/sqmm/number_value",
