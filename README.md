@@ -1,7 +1,8 @@
 # unitconversionAPI
-REST API for unit conversion<br>
+## REST API for unit conversion
 
-Usage: 
+## Usage
+
 ***https://unitconversionapi.herokuapp.com/{measure}/{unit}/{number}***
 'without the curly brackets'<br>
 Example: https://unitconversionapi.herokuapp.com/distance/m/2
@@ -9,6 +10,9 @@ Example: https://unitconversionapi.herokuapp.com/distance/m/2
 For formatting the output result, use 
 ``` value.toStringLocale('en-IN') ``` or ``` value.toFixed(23) ```
 function.
+
+## NPM Package
+[NPM Documentation](https://www.npmjs.com/package/unit-conversion-pkg)
 
 Available Units<br> 
 <br>
