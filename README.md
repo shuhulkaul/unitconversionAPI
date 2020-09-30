@@ -35,6 +35,7 @@ Available Units<br>
 ***ha*** ----> Hectares<br>
 ***sqkm*** ----> Sq. Kilometer<br>
 ***sqin*** ----> Sq. Inches<br>
+***sqft*** ----> Sq. Feet<br>
 ***sqyd*** ----> Sq. Yards<br>
 ***ac*** ----> Acres<br>
 ***sqmi*** ----> Sq. Miles<br>
