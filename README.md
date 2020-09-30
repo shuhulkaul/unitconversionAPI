@@ -7,13 +7,7 @@ Usage:
 Example: https://unitconversionapi.herokuapp.com/distance/m/2
 
 For formatting the output result, use 
-``` 
-value.toStringLocale('en-IN') 
-``` 
-or 
-``` 
-value.toFixed(23)
-```
+``` value.toStringLocale('en-IN') ``` or ``` value.toFixed(23) ```
 function.
 
 Available Units<br> 
