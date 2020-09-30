@@ -6,7 +6,15 @@ Usage:
 'without the curly brackets'<br>
 Example: https://unitconversionapi.herokuapp.com/distance/m/2
 
-For formatting the output result, use ***toStringLocale('en-IN')*** or ***toFixed(23)*** function.
+For formatting the output result, use 
+``` 
+value.toStringLocale('en-IN') 
+``` 
+or 
+``` 
+value.toFixed(23)
+```
+function.
 
 Available Units<br> 
 <br>
