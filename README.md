@@ -1,5 +1,5 @@
 # unitconversionAPI
-## REST API for unit conversion
+#### REST API for unit conversion
 
 ## Usage
 
@@ -14,7 +14,7 @@ function.
 ## NPM Package
 [NPM Documentation](https://www.npmjs.com/package/unit-conversion-pkg)
 
-Available Units<br> 
+## Available Units
 <br>
 > 1.  **_distance_** Distance
 
